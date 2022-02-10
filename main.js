@@ -1,13 +1,13 @@
 const path = require('path');
 const express = require('express')
-var cors = require('cors')
+// var cors = require('cors')
 const app = express()
 
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 
-app.use(cors())
+// app.use(cors())
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -15,8 +15,8 @@ app.use(function(req, res, next) {
     next();
   });
 
-app.set('view engine', 'ejs');
-app.set('views', 'views');
+// app.set('view engine', 'ejs');
+// app.set('views', 'views');
 
 
 // const sequelize = require('./util/postgres.js')
