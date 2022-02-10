@@ -1,0 +1,10 @@
+yarn add
+    express 
+    body-parser 
+    cors 
+    sequelize 
+    pg 
+    pg-hstore 
+    mysql2
+    nodemon --dev
+    ejs
